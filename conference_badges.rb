@@ -26,10 +26,13 @@ def printer
     badge_out << badge
   end
   badge_out.each do |name|
-    
+    puts name
   end
-  assign_rooms
+  room_out = []
   assign_rooms.each do |room|
-    puts room
+    room_out << room
+  end
+  room_out.each do |number|
+    puts number
   end
 end
