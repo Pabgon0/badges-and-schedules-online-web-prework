@@ -10,21 +10,21 @@ def batch_badge_creator(names)
   namelist
 end
 
-def assign_rooms(names2)
+def assign_rooms(names)
   rooms_list = []
   room_number = 1
-  names2.each do |name|
+  names.each do |name|
     rooms_list << "Hello, #{name}! You'll be assigned to room #{room_number}!"
     room_number += 1
   end
   rooms_list
 end
 
-def printer(names3)
-  batch_badge_creator(names3).each do |badge|
+def printer(names)
+  batch_badge_creator(names).each do |badge|
     puts badge
   end
-  assign_rooms(names3).each do |room|
+  assign_rooms(names).each do |room|
     puts room
   end
 end
