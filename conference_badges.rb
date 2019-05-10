@@ -21,10 +21,10 @@ def assign_rooms(list_of_speakers)
 end
 
 def printer
-  batch_badge_creator.each do |badge|
-    puts badge.chomp
+  batch_badge_creator(names).each do |badge|
+    puts badge
   end
-  assign_rooms.each do |room|
-    puts room.chomp
+  assign_rooms.each(list_of_speakers) do |room|
+    puts room
   end
 end
