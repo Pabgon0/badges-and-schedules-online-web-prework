@@ -10,10 +10,10 @@ def batch_badge_creator(names)
   namelist
 end
 
-def assign_rooms(names)
+def assign_rooms(names2)
   rooms_list = []
   room_number = 1
-  names.each do |name|
+  names2.each do |name|
     rooms_list << "Hello, #{name}! You'll be assigned to room #{room_number}!"
     room_number += 1
   end
